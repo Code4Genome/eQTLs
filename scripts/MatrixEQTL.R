@@ -57,8 +57,6 @@ if(length(covariates_file_name)>0) {
   cvrt$LoadFile(covariates_file_name);
 }
 
-#----#Noralising the gene expression data to avoid outliers http://www.bios.unc.edu/research/genomic_software/Matrix_eQTL/faq.html 
-
 for( sl in 1:length(gene) ) {
   mat = gene[[sl]];
   mat = t(apply(mat, 1, rank, ties.method = "average"));
@@ -66,7 +64,6 @@ for( sl in 1:length(gene) ) {
 }
 rm(sl, mat);
 
-#-----# Removing SNPs with MAF<5% when considering only the genotype frequencies of our sample cohort (no imputation from 1000GP)
 
 maf.list = vector('list', length(snps))
 for(sl in 1:length(snps)) {
