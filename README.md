@@ -12,10 +12,16 @@ integrating genotyping and gene expression data to identify genetic variants tha
 - RNA-seq gene expression data (e.g., TPM, counts)
 - Covariates (e.g., population structure, batch effects)
 
-We use tools like **Matrix eQTL** to detect **cis-** and **trans-eQTLs**.
+We use tools like **MatrixEQTL** to detect **cis-** and **trans-eQTLs**.
 
 ## 📁 Project Structure
 
 ├── README.md  
-├── bash/   
-├── scripts/  
+├── bash/Plink   
+├── scripts/MatrixEQTL  
+
+## 🧪 Project Overview
+
+**Assay**: small-RNA (sRNA-seq)   
+**Sample Type**: Plasma samples    
+**Sequencing Platform**: Illumina
